@@ -124,7 +124,7 @@ const lnurlPay = require('lnurl-pay');
 
 ## Testing
 
-* LN address: `sandbox-merchant@bringin.xyz` *(Testnet)*
+* LN address: `merchant@dev.bringin.xyz` *(Testnet)*
 * Live merchant LN address: `merchant@bringin.xyz`
 
 ## Support
