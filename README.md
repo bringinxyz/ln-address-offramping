@@ -122,7 +122,8 @@ const lnurlPay = require('lnurl-pay');
 })();
 ```
 
-Testing
+## Testing
+
 You can test Bringin LN Address offramping on our sandbox environment:
 
 1️⃣ Go to:
@@ -139,6 +140,19 @@ prashanth@dev.bringin.xyz
 5️⃣ You can now send test Bitcoin over Lightning to this LN Address.
 
 6️⃣ Funds will appear in your test vIBAN balance as EUR (test mode).
+
+## User Onboarding & Affiliate Flow
+If your users do not already have a Bringin LN Address, you can offer them a signup flow:
+
+1️⃣ You will be provided with an affiliate signup link (customized for your integration)
+
+2️⃣ Users who sign up via this link will go through Bringin onboarding (KYC + account creation)
+
+3️⃣ Once onboarded, the user can claim their LN Address from their Bringin dashboard
+
+4️⃣ After claiming their LN Address, they can immediately start receiving Lightning payments which off-ramp to EUR in their vIBAN
+
+
 
 ## Support
 
