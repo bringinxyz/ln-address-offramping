@@ -122,10 +122,23 @@ const lnurlPay = require('lnurl-pay');
 })();
 ```
 
-## Testing
+Testing
+You can test Bringin LN Address offramping on our sandbox environment:
 
-* LN address: `merchant@dev.bringin.xyz` *(Testnet)*
-* Live merchant LN address: `merchant@bringin.xyz`
+1️⃣ Go to:
+https://bringin-lite-test.vercel.app/
+
+2️⃣ Create a test user account (use fake KYC details — no real data required)
+
+3️⃣ After creating account, go to:
+https://dev-app.bringin.xyz/
+
+4️⃣ From the Bringin Dashboard, claim a test LN Address — looks like:
+prashanth@dev.bringin.xyz
+
+5️⃣ You can now send test Bitcoin over Lightning to this LN Address.
+
+6️⃣ Funds will appear in your test vIBAN balance as EUR (test mode).
 
 ## Support
 
