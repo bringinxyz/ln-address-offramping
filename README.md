@@ -37,7 +37,7 @@ Internally, it is built on **LNURL-Pay**, allowing wallets or services to retrie
 
 ## Default Limits
 
-* ⚠️ Default **minSendable** is €10 worth of sats (because of exchange partner limits)
+* ⚠️ Default **minSendable** is €20 worth of sats (because of exchange partner limits)
 
 This works well when users send funds manually from their wallet by typing in the LN address.
 
