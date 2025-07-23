@@ -105,22 +105,31 @@ const lnurlPay = require('lnurl-pay');
 })();
 ```
 
-### Example with POS Mode (low minSendable)
+### Example with POS Mode - low minSendable (Official Bringin Library Recommended)
 
-```js
-const lnurlPay = require('lnurl-pay');
+For easier POS mode integration, we've published an official library:
 
-(async () => {
-  const lnAddress = 'merchant@bringin.xyz';
-  const lnurlWithPOS = 'https://bringin.xyz/.well-known/lnurlp/merchant?pos=true';
-  
-  const lnurlData = await lnurlPay.requestInvoice({
-    lnUrlOrAddress: lnurlWithPOS
-  });
-  
-  console.log('Invoice for POS:', lnurlData.invoice);
-})();
+```bash
+npm install @bringinxyz/lnurl-pay
 ```
+
+**Simple POS mode usage:**
+```javascript
+const lnurlPay = require('@bringinxyz/lnurl-pay');
+
+const invoice = await lnurlPay.requestInvoice({
+  lnUrlOrAddress: 'merchant@bringin.xyz',
+  tokens: 100,        // 100 sats instead of 22,000+
+  posMode: true       // Enable POS mode
+});
+```
+
+**Benefits:**
+- ✅ Drop-in replacement for `lnurl-pay`
+- ✅ 99.9% lower minimums (20 vs 22,000 sats)
+- ✅ Simple `posMode: true` flag
+- ✅ Full documentation: [@bringinxyz/lnurl-pay](https://www.npmjs.com/package/@bringinxyz/lnurl-pay)
+
 
 ## Testing
 
